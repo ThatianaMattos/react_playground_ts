@@ -1,8 +1,15 @@
-﻿
-function Home() {
-  return (
-    <div>Componente Home</div>
-  )
+﻿interface homeProps {
+    titulo: string;
+    texto: string;
 }
 
-export default Home
+function Home(props: homeProps) {
+    return (
+        <div>
+            <h2>{props.titulo}</h2>
+            <p>{props.texto}</p>
+        </div>
+    );
+}
+
+export default Home;
